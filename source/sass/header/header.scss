@@ -1,0 +1,17 @@
+.header {
+  flex-direction: column;
+  max-width: 1160px;
+  box-sizing: border-box;
+  margin: 40px auto 0 auto;
+  background-color: #f7e296;
+  padding-top: 45px;
+  padding-right: 45px;
+  padding-left: 60px;
+  //background-image: url("../img/slide-1.png");
+}
+
+.header_logo {
+  width: 100%;
+  margin-top: -65px;
+  margin-bottom: 25px;
+}

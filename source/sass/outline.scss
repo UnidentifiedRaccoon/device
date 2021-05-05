@@ -1,0 +1,87 @@
+/* Обводки */
+body > *,
+body > * > *,
+body > * > * > *,
+body > * > * > * > *,
+body > * > * > * > * > * {
+  position: relative;
+}
+
+body > *::before,
+body > * > *::before,
+body > * > * > *::before,
+body > * > * > * > *::before,
+body > * > * > * > * > *::before {
+  content: "."attr(class);
+
+  position: absolute;
+  top: 2px;
+  left: 2px;
+
+  height: 24px;
+  padding: 2px 5px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Courier New", monospace;
+  white-space: nowrap;
+}
+
+body > * {
+  background: rgba(128, 255, 128, 0.25);
+  background-clip: content-box;
+  outline: 3px solid green;
+  outline-offset: -3px;
+}
+
+body > *::before {
+  color: white;
+  background: green;
+}
+
+body > * > * {
+  background: rgba(255, 45, 82, 0.2);
+  background-clip: content-box;
+  outline: 3px solid rgba(255, 45, 82, 0.9);
+  outline-offset: -3px;
+}
+
+body > * > *::before {
+  color: white;
+  background: rgb(255, 45, 82);
+}
+
+body > * > * > * {
+  background: rgba(173, 216, 230, 0.2);
+  background-clip: content-box;
+  outline: 3px solid rgba(173, 216, 230, 0.9);
+  outline-offset: -3px;
+}
+
+body > * > * > *::before {
+  color: black;
+  background: lightblue;
+}
+
+body > * > * > * > * {
+  background: rgba(234, 255, 45, 0.2);
+  background-clip: content-box;
+  outline: 3px solid rgba(234, 255, 45, 0.9);
+  outline-offset: -3px;
+}
+
+body > * > * > * > *::before {
+  color: black;
+  background: rgb(234, 255, 45);
+}
+
+body > * > * > * > * > * {
+  outline: 3px solid violet;
+  outline-offset: -3px;
+}
+
+body > * > * > * > * > *::before {
+  color: black;
+  background: violet;
+}

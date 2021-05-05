@@ -1,0 +1,32 @@
+.search {
+  margin-top: -3px;
+}
+
+.search_label {
+  position: relative;
+}
+.search_field {
+  padding: 7px 5px 8px 40px;
+  border: none;
+  width: 350px;
+  background-color: #f7e296;
+
+  font-family: inherit;
+}
+
+.search_label::before {
+  position: absolute;
+  content: '';
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/icon_search.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.search_button {
+  background-color: cyan;
+  //background-image: url("");
+}

@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "Gilroy";
+  src:
+		  url("../fonts/Gilroy-Extrabold.woff2") format("woff2"),
+		  url("../fonts/Gilroy-Extrabold.woff") format("woff");
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src:
+		  url("../fonts/Gilroy-Light.woff2") format("woff2"),
+		  url("../fonts/Gilroy-Light.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+		  url("../fonts/OpenSans-Light.woff2") format("woff2"),
+		  url("../fonts/OpenSans-Light.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  //overflow: overlay;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  // -webkit-clip-path: inset(100%); почему на него ругается линтер
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  box-sizing: border-box;
+
+  &--gray {
+	background-color: gray;
+  }
+
+  &--darkgray {
+	background-color: darkgray;
+  }
+}

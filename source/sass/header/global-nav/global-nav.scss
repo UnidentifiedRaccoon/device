@@ -1,0 +1,91 @@
+.global-nav {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 30px;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+}
+
+.global-nav_search .search_field {
+  font-family: inherit;
+}
+
+.global-nav_list {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+
+  //Pixel-Perfect
+  margin-top: -3px;
+  margin-right: -15px;
+
+  width: 535px;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.global-nav_list-user {
+  margin: 0;
+  padding: 0;
+  width: 275px;
+  list-style: none;
+}
+
+.global-nav_list-other {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 250px;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+
+.global-nav_item {
+  margin-right: 15px;
+}
+
+.global-nav_link {
+  position: relative;
+  width: 110px;
+  padding: 7px 15px 8px 30px;
+  box-sizing: border-box;
+
+  &::before {
+	top: 12px;
+	left: 7px;
+	position: absolute;
+	content: '';
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+  }
+
+  &--signIn::before {
+	width: 13px;
+	height: 12px;
+	background-image: url("../img/icon_signIn.svg");
+  }
+  &--compare::before {
+	width: 10px;
+	height: 10px;
+	background-image: url("../img/icon_compare.svg");
+  }
+  &--basket::before {
+	width: 12px;
+	height: 12px;
+	background-image: url("../img/icon_basket.svg");
+  }
+}
+
+
