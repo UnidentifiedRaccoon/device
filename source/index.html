@@ -9,6 +9,25 @@
 	<!--	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">-->
 	<!--	<link rel="stylesheet" href="css/normalize.css">-->
 	<link rel="stylesheet" href="css/style-min.css">
+<!--	<script type="javascript" src="js/scripts.js"/>-->
+	<script>
+		let button = document.getElementsByClassName('search_button');
+		function hideSearchButton() {
+
+			console.log("yt dsgjkyz.cm");
+			button[0].classList.add('visually-hidden');
+		};
+
+		function showSearchButton() {
+			console.log(button);
+			button[0].classList.remove('visually-hidden');
+			console.log(button);
+
+		};
+
+
+
+	</script>
 </head>
 
 <body>
@@ -23,9 +42,12 @@
 		<nav class="global-nav header_global-nav">
 			<div class="search global-nav_search">
 				<label class="search_label">
-					<input class="search_field" type="search" placeholder="Поиск по сайту">
+					<input class="search_field" type="search"
+						   placeholder="Поиск по сайту"
+						   onfocus="showSearchButton()"
+						   onblur="hideSearchButton()">
+					<button class="search_button visually-hidden">Найти</button>
 				</label>
-				<button class="search_button">Найти</button>
 			</div>
 			<ul class="global-nav_list">
 				<ul class="global-nav_list-user">
@@ -46,11 +68,6 @@
 							Корзина
 						</a>
 					</li>
-<!--					<li class="global-nav_item global-nav_link&#45;&#45;basket">-->
-<!--						<a href="/basket.html" class="global-nav_link global-nav_link&#45;&#45;basket">-->
-<!--							Корзина-->
-<!--						</a>-->
-<!--					</li>-->
 				</ul>
 			</ul>
 		</nav>
@@ -67,7 +84,7 @@
 					</button>
 				</div>
 
-				<div class="drop-out general-nav_catalog-menu visually-hidden">
+				<div class="drop-out general-nav_catalog-menu">
 					<ul class="drop-out_list">
 						<li class="drop-out_item">
 							<a href="#" class="drop-out_link">

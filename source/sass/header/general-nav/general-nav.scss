@@ -1,16 +1,17 @@
 .general-nav {
   display: flex;
   justify-content: space-between;
+
+  margin-right: -40px;
 }
 
 .general-nav_catalog-inner-wrapper {
   display: flex;
   width: 300px;
-  margin-bottom: 30px;
 }
 
 .general-nav_link {
-  padding: 8px 0 10px 0;
+  padding: 5px 0 7px 0;
   font-family: "Gilroy", "Arial", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -19,6 +20,15 @@
   letter-spacing: 3.6px;
 
   text-transform: uppercase;
+}
+
+.general-nav_link:hover,
+.general-nav_link:focus {
+  opacity: 60%;
+}
+
+.general-nav_link:active {
+  opacity: 30%;
 }
 
 .general-nav_catalog-show-more {
@@ -34,7 +44,7 @@
   background-color: inherit;
 
   &::before {
-	top: 9px;
+	top: 5px;
 	right: 2px;
 	position: absolute;
 	content: '';
@@ -45,7 +55,7 @@
   }
 
   &::after {
-	top: 9px;
+	top: 5px;
 	left: 2px;
 	position: absolute;
 	content: '';
@@ -57,21 +67,31 @@
   }
 }
 
+.general-nav_catalog-menu {
+  display: none;
+}
+
 .general-nav_list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 
-  width: 525px;
+  width: 540px;
   box-sizing: border-box;
 
   margin: 0;
-  padding: 5px 10px 0 10px;
+  padding: 0;
+  padding-top: 5px;
 
   list-style: none;
 }
 
-.general-nav_link {
+.general-nav_item {
+  margin-right: 35px;
+  margin-bottom: 20px;
+}
 
+.general-nav_item:nth-child(2){
+  margin-right: auto;
 }
 
 

@@ -2,3 +2,12 @@
   width: 164px;
   height: auto;
 }
+
+.site-logo_img:hover,
+.site-logo_img:focus {
+  opacity: 50%;
+}
+
+.site-logo_img:active {
+  opacity: 25%;
+}

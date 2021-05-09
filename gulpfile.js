@@ -74,7 +74,7 @@ gulp.task("html", function () {
 
 // для js
 gulp.task("js", function () {
-	return gulp.src("source/js/**/*.js")
+	return gulp.src("source/js/*.js")
 		.pipe(uglify())
 		.pipe(rename(function (path) {
 			path.basename += "-min";
