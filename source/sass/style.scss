@@ -1,9 +1,14 @@
+@import "variables";
 @import "normalize";
 //@import "outline";
 @import "common";
+
 @import "header/header";
 @import "header/site-logo/site-logo";
 @import "header/global-nav/global-nav";
 @import "header/global-nav/search/search";
 @import "header/general-nav/general-nav";
 @import "header/general-nav/drop-out/drop-out";
+
+@import "main/slider/slider";
+@import "main/slider/table/table";

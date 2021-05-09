@@ -9,9 +9,10 @@
 	<!--	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">-->
 	<!--	<link rel="stylesheet" href="css/normalize.css">-->
 	<link rel="stylesheet" href="css/style-min.css">
-<!--	<script type="javascript" src="js/scripts.js"/>-->
+	<!--	<script type="javascript" src="js/scripts.js"/>-->
 	<script>
-		let button = document.getElementsByClassName('search_button');
+		let button = document.getElementsByClassName('search__button');
+
 		function hideSearchButton() {
 
 			console.log("yt dsgjkyz.cm");
@@ -26,91 +27,90 @@
 		};
 
 
-
 	</script>
 </head>
 
 <body>
-<div class="container">
-	<header class="header">
-		<div class="site-logo header_logo">
-			<a class="site-logo_link">
-				<img class="site-logo_img" src="img/logo-device.svg" alt="Device -">
+<header class="header">
+	<div class="container">
+		<div class="site-logo header__logo">
+			<a class="site-logo__link">
+				<img class="site-logo__img" src="img/logo-device.svg" alt="Device -">
 			</a>
 		</div>
 		<!--			global nav is something what never will be changed-->
-		<nav class="global-nav header_global-nav">
-			<div class="search global-nav_search">
-				<label class="search_label">
-					<input class="search_field" type="search"
+		<nav class="global-nav header__global-nav">
+			<div class="search global-nav__search">
+				<label class="search__label">
+					<input class="search__field" type="search"
 						   placeholder="Поиск по сайту"
 						   onfocus="showSearchButton()"
 						   onblur="hideSearchButton()">
-					<button class="search_button visually-hidden">Найти</button>
+					<button class="search__button visually-hidden">Найти</button>
 				</label>
 			</div>
-			<ul class="global-nav_list">
-				<ul class="global-nav_list-user">
-					<li class="global-nav_item global-nav_item--signIn">
-						<a href="/signIn.html" class="global-nav_link global-nav_link--signIn">
+			<ul class="global-nav__list">
+				<ul class="global-nav__list-user">
+					<li class="global-nav__item global-nav__item--signIn">
+						<a href="/signIn.html" class="global-nav__link global-nav__link--signIn">
 							Войти
 						</a>
 					</li>
 				</ul>
-				<ul class="global-nav_list-other">
-					<li class="global-nav_item global-nav_item--compare">
-						<a href="/compare.html" class="global-nav_link global-nav_link--compare">
+				<ul class="global-nav__list-other">
+					<li class="global-nav__item global-nav__item--compare">
+						<a href="/compare.html" class="global-nav__link global-nav__link--compare">
 							Сравнить
 						</a>
 					</li>
-					<li class="global-nav_item global-nav_link--basket">
-						<a href="/basket.html" class="global-nav_link global-nav_link--basket">
+					<li class="global-nav__item global-nav__link--basket">
+						<a href="/basket.html" class="global-nav__link global-nav__link--basket">
 							Корзина
 						</a>
 					</li>
 				</ul>
 			</ul>
 		</nav>
-<!--					general nav is place, where new section(page) title can be added-->
-		<nav class="general-nav header_general-nav">
-			<div class="general-nav_catalog">
-				<div class="general-nav_catalog-inner-wrapper">
-					<a href="/catalog.html" class="general-nav_link general-nav_link--catalog">
+		<!--					general nav is place, where new section(page) title can be added-->
+		<nav class="general-nav header__general-nav">
+			<div class="general-nav__catalog">
+				<div class="general-nav__catalog-inner-wrapper">
+					<a href="/catalog.html" class="general-nav__link general-nav__link--catalog">
 						Каталог товаров
 					</a>
-					<button class="general-nav_catalog-show-more"
+					<button class="general-nav__catalog-show-more"
 							aria-label="Open the list with links to catalog section">
 						Show more
 					</button>
 				</div>
 
-				<div class="drop-out general-nav_catalog-menu">
-					<ul class="drop-out_list">
-						<li class="drop-out_item">
-							<a href="#" class="drop-out_link">
+				<div class="drop-out general-nav__catalog-menu">
+					<ul class="drop-out__list">
+						<li class="drop-out__item">
+							<a href="#" class="drop-out__link">
 								Виртуальная реальность</a>
 						</li>
-						<li class="drop-out_item">
-							<a href="#" class="drop-out_link">
+						<li class="drop-out__item">
+							<a href="#" class="drop-out__link">
 								Фитнес браслеты
 							</a>
 						</li>
-						<li class="drop-out_item">
-							<a href="#" class="drop-out_link">
+						<li class="drop-out__item">
+							<a href="#" class="drop-out__link">
 								Моноподы
 							</a>
 						</li>
-						<li class="drop-out_item">
-							<a href="#" class="drop-out_link">
+						<li class="drop-out__item">
+							<a href="#" class="drop-out__link">
 								Умные часы
 							</a>
 						</li>
-						<li class="drop-out_item">
-							<a href="#" class="drop-out_link">
+						<li class="drop-out__item">
+							<a href="#" class="drop-out__link">
 								Квадрокоптеры
 							</a></li>
-						<li class="drop-out_item">
-							<a href="#" class="drop-out_link">
+						<li class="drop-out__item">
+							<a href="#" class="drop-out__link">
 								Экшн-камеры
 							</a>
 						</li>
@@ -118,32 +118,170 @@
 				</div>
 			</div>
 			<div>
-				<ul class="general-nav_list">
-					<li class="general-nav_item">
-						<a href="/delivery.html" class="general-nav_link">
+				<ul class="general-nav__list">
+					<li class="general-nav__item">
+						<a href="/delivery.html" class="general-nav__link">
 							Доставка
 						</a>
 					</li>
-					<li class="general-nav_item">
-						<a href="/guarantee.html" class="general-nav_link">
-							Гарантии
+					<li class="general-nav__item">
+						<a href="/guarantee.html" class="general-nav__link">
+							Гарантия
 						</a>
 					</li>
-					<li class="general-nav_item">
-						<a href="/contacts.html" class="general-nav_link">
+					<li class="general-nav__item">
+						<a href="/contacts.html" class="general-nav__link">
 							Контакты
 						</a>
 					</li>
 				</ul>
 			</div>
 		</nav>
-	</header>
-	<main>
+	</div>
+</header>
 
-	</main>
-	<footer>
 
-	</footer>
+<main>
+	<h1 class="visually-hidden">Девайс - сайт современной электротехники</h1>
+	<section class="slider">
+		<div class="container">
+			<h2 class="visually-hidden">Товары - которые могут вас заинтересовать</h2>
+			<ul class="slider__list">
+				<li class="slider__item slider__item--first-slide ">
+					<picture class="slider__picture">
+						<source srcset="img/slide-1@1x.webp 1x, img/slide-1@1.5x.webp 1.5x, img/slide-1@2x.webp 2x">
+						<source srcset="img/slide-1@1x.png 1x, img/slide-1@1.5x.png 1.5x, img/slide-1@2x.png 2x">
+						<img class="slider__image" src="img/slide-1@1x.png" srcset="img/slide-1@2x.png 2x"
+							 alt="Мультифункциональные селфи палки - одинаково хороши как для фотографий, так и для самообороны"
+							 width="385" height="485">
+					</picture>
+					<div class="slider__right-column">
+						<b class="slider__lead">Делай селфи,<br>
+							как Бен Стиллер!
+						</b>
+						<p class="slider__paragraph">
+							Самая длинная палка для селфи доступна в нашем магазине.
+							Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+						</p>
+						<div class="slider__buttons-wrapper">
+							<button class="slider__button-details">Подробнее</button>
+							<ul class="slider__radio-list">
+								<li class="slider__radio-toggle slider__radio-toggle--active">1</li>
+								<li class="slider__radio-toggle">2</li>
+								<li class="slider__radio-toggle">3</li>
+							</ul>
+						</div>
+						<table class="table slider__table">
+							<caption class="visually-hidden">Особенности товара</caption>
+							<tbody>
+							<tr class="table__row table__row--data">
+								<td class="table__cell">8,5 м</td>
+								<td class="table__cell">5 кг</td>
+								<td class="table__cell">Карбон</td>
+							</tr>
+							</tbody>
+
+							<tfoot>
+							<tr class="table__row table__row--head">
+								<th class="table__head"><span class="table__span">Длина палки</span></th>
+								<th class="table__head">Вес палки</th>
+								<th class="table__head">Материал</th>
+							</tr>
+							</tfoot>
+						</table>
+					</div>
+				</li>
+				<li class="slider__item slider__item--second-slide visually-hidden">
+					<picture class="slider__picture">
+						<source srcset="img/slide-2@1x.webp 1x, img/slide-2@1.5x.webp 1.5x, img/slide-2@2x.webp 2x">
+						<source srcset="img/slide-2@1x.png 1x, img/slide-2@1.5x.png 1.5x, img/slide-2@2x.png 2x">
+						<img class="slider__image" src="img/slide-2@1x.png" srcset="img/slide-2@2x.png 2x"
+							 alt="Электронные часы с футуристичным дизайном не позволят вышим ночным вылазкам на кухню остаться незамеченными"
+							 width="345" height="485">
+					</picture>
+					<div class="slider__right-column">
+						<b class="slider__lead">Худеем<br>
+							правильно!
+						</b>
+						<p class="slider__paragraph">
+							Мотивирующие фитнес-браслеты помогут найти в себе силы
+							не пропускать занятия и соблюдать диету.
+						</p>
+						<div class="slider__buttons-wrapper">
+							<button class="slider__button-details">Подробнее</button>
+							<ul class="slider__radio-list">
+								<li class="slider__radio-toggle">1</li>
+								<li class="slider__radio-toggle slider__radio-toggle--active">2</li>
+								<li class="slider__radio-toggle">3</li>
+							</ul>
+						</div>
+						<table class="table slider__table">
+							<caption class="visually-hidden">Особенности товара</caption>
+							<tbody>
+							<tr class="table__row table__row--data">
+								<td class="table__cell">48 часов</td>
+							</tr>
+							</tbody>
+
+							<tfoot>
+							<tr class="table__row table__row--head">
+								<th class="table__head">Без подзарядки</th>
+							</tr>
+							</tfoot>
+						</table>
+					</div>
+
+				</li>
+				<li class="slider__item slider__item--third-slide visually-hidden">
+					<picture class="slider__picture">
+						<source srcset="img/slide-3@1x.webp 1x, img/slide-3@1.5x.webp 1.5x, img/slide-3@2x.webp 2x">
+						<source srcset="img/slide-3@1x.png 1x, img/slide-3@1.5x.png 1.5x, img/slide-3@2x.png 2x">
+						<img class="slider__image" src="img/slide-3@1x.png" srcset="img/slide-3@2x.png 2x"
+							 alt="Квадрокоптер с мощным лазером, все будет выглядеть так, как-будто сосед уснул, не потушив сигарету"
+							 width="525" height="335">
+					</picture>
+					<div class="slider__right-column">
+						<b class="slider__lead">Порхает как бабочка,<br>
+							жалит как пчела!
+						</b>
+						<p class="slider__paragraph">
+							Этот обычный, на первый взгляд, квадрокоптер оснащен
+							мощным лазером, замаскированным под стандартную камеру.
+						</p>
+						<div class="slider__buttons-wrapper">
+							<button class="slider__button-details">Подробнее</button>
+							<ul class="slider__radio-list">
+								<li class="slider__radio-toggle">1</li>
+								<li class="slider__radio-toggle">2</li>
+								<li class="slider__radio-toggle slider__radio-toggle--active">3</li>
+							</ul>
+						</div>
+						<table class="table slider__table">
+							<caption class="visually-hidden">Особенности товара</caption>
+							<tbody>
+							<tr class="table__row table__row--data">
+								<td class="table__cell">800 м</td>
+								<td class="table__cell">50 м</td>
+							</tr>
+							</tbody>
+							<tfoot>
+							<tr class="table__row table__row--head">
+								<th class="table__head">Дальность полета</th>
+								<th class="table__head">Радиус поражения</th>
+							</tr>
+							</tfoot>
+						</table>
+					</div>
+
+				</li>
+			</ul>
+		</div>
+	</section>
+
+</main>
+<footer>
+
+</footer>
 </div>
 </body>
 </html>

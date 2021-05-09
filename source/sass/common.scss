@@ -64,8 +64,9 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-  width: 100%;
+  max-width: $desktop-width;
   box-sizing: border-box;
+  margin: 0 auto;
 
   &--gray {
 	background-color: gray;

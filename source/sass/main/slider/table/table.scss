@@ -1,0 +1,22 @@
+.table {
+	table-layout: fixed;
+}
+
+.table__head {
+  font-family: $OpenSans;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.table__cell {
+  padding-right: 75px;
+  padding-bottom: 5px;
+  font-family: $Gilroy;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 48px;
+}
+
+
+

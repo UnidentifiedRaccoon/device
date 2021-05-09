@@ -3,11 +3,11 @@
   margin-top: -3px;
 }
 
-.search_label {
+.search__label {
   display: inline-block;
   position: relative;
 }
-.search_field {
+.search__field {
   width: 350px;
   box-sizing: border-box;
   margin-bottom: -2px;
@@ -22,11 +22,11 @@
   opacity: 50%;
 }
 
-.search_field:hover {
+.search__field:hover {
   opacity: 100%;
 }
 
-.search_field:focus {
+.search__field:focus {
   outline: none;
   border-bottom: 2px solid #000000;
 }
@@ -36,10 +36,10 @@
 
 
 
-.search_label::before {
+.search__label::before {
   position: absolute;
   content: '';
-  top: 10px;
+  top: 12px;
   left: 0;
   width: 20px;
   height: 20px;
@@ -48,7 +48,7 @@
   background-position: 50% 50%;
 }
 
-.search_button {
+.search__button {
   width: 85px;
   box-sizing: border-box;
 

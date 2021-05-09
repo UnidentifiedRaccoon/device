@@ -1,14 +1,15 @@
 .header {
-  flex-direction: column;
-  max-width: 1160px;
-  box-sizing: border-box;
-  margin: 0 auto;
-  background: linear-gradient(#ffffff 40px, #f7e296 40px);
-  padding: 20px 60px 20px;
-  //background-image: url("../img/slide-1.png");
 }
 
-.header_logo {
+.header .container {
+  flex-direction: column;
+  padding: 20px 60px 20px;
+
+  background: linear-gradient(#ffffff 40px, $yellow 40px);
+
+}
+
+.header__logo {
   width: 100%;
   margin-bottom: 20px;
 }

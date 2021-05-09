@@ -42,7 +42,10 @@
 		"stylelint": "13.13.1",
 		"stylelint-config-htmlacademy": "0.1.x"
 	},
-	"dependencies": {},
+	"dependencies": {
+		"imagemin": "^8.0.0",
+		"imagemin-webp": "^6.0.0"
+	},
 	"scripts": {
 		"editorconfig": "editorconfig-cli",
 		"stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",

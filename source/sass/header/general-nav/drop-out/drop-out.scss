@@ -1,4 +1,4 @@
-.drop-out_list {
+.drop-out__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   row-gap: 20px;
@@ -18,6 +18,6 @@
   list-style: none;
 }
 
-.drop-out_link {
+.drop-out__link {
   padding: 7px  15px 8px 0;
 }
