@@ -1,0 +1,64 @@
+.popular {
+  padding-top: 30px;
+}
+
+.popular__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: $Gilroy;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.popular__item {
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 160px;
+  height: 160px;
+}
+
+.popular__picture {
+  display: block;
+  margin-bottom: 30px;
+  padding-bottom: 160px;
+  padding-left: 160px;
+  background-color: $yellow;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  &--virtual-reality {
+	background-image: url("/img/icon_virtual-reality.svg");
+  }
+
+  &--selfie-stick {
+	background-image: url("/img/icon_selfie-stick.svg");
+	background-position: 50% 90%;
+  }
+
+  &--action-camera {
+
+	background-image: url("/img/icon_action-camera.svg");
+  }
+
+  &--fitness-tracker {
+	background-image: url("/img/icon_fitness-tracker.svg");
+  }
+
+  &--smart-watch {
+	background-image: url("/img/icon_smart-watch.svg");
+  }
+
+  &--quadcopter {
+	background-image: url("/img/icon_quadcopter.svg");
+  }
+}
+
+.popular__item-title {
+
+}
+
