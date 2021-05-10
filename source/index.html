@@ -35,11 +35,12 @@
 	<div class="container">
 		<div class="site-logo header__logo">
 			<a class="site-logo__link">
-				<img class="site-logo__img" src="img/logo-device.svg" alt="Device -">
+				<img class="site-logo__img" src="img/logo-device.svg"
+					 alt="Логотип Device - магазин современной электротехники">
 			</a>
 		</div>
 		<!--			global nav is something what never will be changed-->
-		<nav class="global-nav header__global-nav">
+		<nav class="global-nav global-nav--header header__global-nav">
 			<div class="search global-nav__search">
 				<label class="search__label">
 					<input class="search__field" type="search"
@@ -72,7 +73,7 @@
 			</ul>
 		</nav>
 		<!--					general nav is place, where new section(page) title can be added-->
-		<nav class="general-nav header__general-nav">
+		<nav class="general-nav general-nav--header header__general-nav">
 			<div class="general-nav__catalog">
 				<div class="general-nav__catalog-inner-wrapper">
 					<a href="/catalog.html" class="general-nav__link general-nav__link--catalog">
@@ -420,11 +421,121 @@
 				</li>
 			</ul>
 		</div>
+
+	</section>
+	<section class="company-info">
+		<h2 class="visually-hidden">Информация о компании</h2>
+		<div class="container">
+			<section class="about-us company-info__left-section">
+				<h3>О нас</h3>
+				<p> Огромный выбор гаджетов не оставит равнодушным гика,
+					который есть в каждом из нас.
+				</p>
+				<p> Мы можем доставить ваш товар в самые отдаленные точки России!
+					DEVICE работает со многими транспортными компаниями:
+				</p>
+				<ul class="company-info__transports-list">
+					<li>Деловые линии</li>
+					<li>Автотрейдинг</li>
+					<li>ЖелДорЭкспедиция</li>
+				</ul>
+				<a href="#" class="company-info__link">Подробнее о нас</a>
+			</section>
+			<section class="contacts company-info__right-section">
+				<h3>Контакты</h3>
+				<p> Вы можете забрать товар сами, заехав в наш офис.
+					Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
+				</p>
+				<a href="" class="contacts__map-link">
+					<picture class="contacts__map">
+						<source srcset="img/map@1x.webp 1x, img/map@1.5x.webp 1.5x, img/map@2x.webp 2x">
+						<source srcset="img/map@1x.png 1x, img/map@1.5x.png 1.5x, img/map@2x.png 2x">
+						<img class="contacts__map-img" src="img/map@1x.png" srcset="img/map@2x.png 2x"
+							 alt="Название компании"
+							 width="560" height="220">
+					</picture>
+				</a>
+
+				<a href="#" class="company-info__link">Напишите нам</a>
+			</section>
+		</div>
+
 	</section>
 </main>
-<footer>
+<footer class="footer">
+	<div class="container">
+		<nav class="global-nav global-nav--footer footer__global-nav">
+			<div class="site-logo footer__logo">
+				<a class="site-logo__link">
+					<img class="site-logo__img" src="img/logo-device.svg"
+						 alt="Логотип Device - магазин современной электротехники">
+				</a>
+			</div>
+			<ul class="global-nav__list">
+				<ul class="global-nav__list-user">
+					<li class="global-nav__item global-nav__item--signIn">
+						<a href="/signIn.html" class="global-nav__link global-nav__link--signIn">
+							Войти
+						</a>
+					</li>
+				</ul>
+				<ul class="global-nav__list-other">
+					<li class="global-nav__item global-nav__item--compare">
+						<a href="/compare.html" class="global-nav__link global-nav__link--compare">
+							Сравнить
+						</a>
+					</li>
+					<li class="global-nav__item global-nav__link--basket">
+						<a href="/basket.html" class="global-nav__link global-nav__link--basket">
+							Корзина
+						</a>
+					</li>
+				</ul>
+			</ul>
+		</nav>
+		<div class="footer__middle-row">
+			<address class="footer__address">
+				г. Москва, ул. Строителей, 15
+			</address>
+			<nav class="general-nav general-nav--footer footer__general-nav">
+				<ul class="general-nav__list">
+					<li class="general-nav__item">
+						<a href="/delivery.html" class="general-nav__link">
+							Доставка
+						</a>
+					</li>
+					<li class="general-nav__item">
+						<a href="/guarantee.html" class="general-nav__link">
+							Гарантия
+						</a>
+					</li>
+					<li class="general-nav__item">
+						<a href="/contacts.html" class="general-nav__link">
+							Контакты
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<a href="tel:+7 (495) 495-95-95" class="footer__tel">Тел.: +7 (495) 495-95-95</a>
+
+		</div>
+		<div class="footer__bottom-row">
+			<span class="footer__dash"></span>
+			<ul class="footer__social-list">
+				<li class="footer__social-item">
+					<a href="#" class="footer__social-link footer__social-link--fb" aria-label="Ссылка на нас в фейсбуке"></a>
+				</li>
+				<li class="footer__social-item">
+					<a href="#" class="footer__social-link footer__social-link--insta" aria-label="Ссылка на нас в инстаграмме"></a>
+				</li>
+				<li class="footer__social-item">
+					<a href="#" class="footer__social-link footer__social-link--twitter" aria-label="Ссылка на нас в твиттере"></a>
+				</li>
+			</ul>
+			<a href="https://github.com/UnidentifiedRaccoon" class="footer__creator" aria-label="creator link"><img src="img/icon_icon.png" alt="JoJo" width="30" height="30"></a>
+		</div>
+	</div>
 
 </footer>
-</div>
 </body>
 </html>

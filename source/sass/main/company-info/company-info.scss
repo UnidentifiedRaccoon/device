@@ -1,0 +1,75 @@
+.company-info {
+	margin-bottom: 80px;
+
+  & p {
+	margin-bottom: 40px;
+	font-family: $OpenSans;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 30px;
+  }
+
+  & h3 {
+	margin-top: 40px;
+	font-family: $Gilroy;
+	font-weight: 800;
+	font-size: 47px;
+	line-height: 48px;
+  }
+
+}
+
+.company-info .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-info__left-section,
+.company-info__right-section {
+  max-width: 48.5%;
+  position: relative;
+  &::before {
+	position: absolute;
+	content: '';
+	width: 80px;
+	height: 7px;
+	background-color: #000000;
+  }
+}
+
+.company-info__left-section {
+  margin-right: auto;
+}
+
+
+.company-info__transports-list {
+  margin: 0;
+  padding: 0;
+  padding-top: 22px;
+  padding-left: 12px;
+  list-style-type: circle;
+  font-family: $Gilroy;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 40px;
+}
+
+.company-info__link {
+  display: block;
+  width: 260px;
+  box-sizing: border-box;
+  margin-top: 55px;
+  padding: 7px 20px 10px 20px;
+
+  background: linear-gradient( transparentize(#000000, 1) 40%, $yellow 40%, $yellow 55%, transparentize(#000000, 1) 55%);
+
+  font-family: "Gilroy", "Arial", sans-serif ;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 3.5px;
+
+  text-transform: uppercase;
+  text-align: center;
+}
+

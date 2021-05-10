@@ -3,15 +3,20 @@
 //@import "outline";
 @import "common";
 
-@import "header/header";
-@import "header/site-logo/site-logo";
-@import "header/global-nav/global-nav";
-@import "header/global-nav/search/search";
-@import "header/general-nav/general-nav";
-@import "header/general-nav/drop-out/drop-out";
+@import "header_and_footer/header";
+@import "header_and_footer/site-logo/site-logo";
+@import "header_and_footer/global-nav/global-nav";
+@import "header_and_footer/global-nav/search/search";
+@import "header_and_footer/general-nav/general-nav";
+@import "header_and_footer/general-nav/drop-out/drop-out";
 
 @import "main/slider/slider";
 @import "main/slider/table/table";
 @import "main/popular/popular";
 @import "main/services/services";
 @import "main/partners/partners";
+@import "main/company-info/company-info";
+@import "main/company-info/about-us/about-us";
+@import "main/company-info/contacts/contacts";
+
+@import "header_and_footer/footer";
