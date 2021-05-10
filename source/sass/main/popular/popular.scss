@@ -1,5 +1,6 @@
 .popular {
   padding-top: 30px;
+  margin-bottom: 70px;
 }
 
 .popular__list {
@@ -18,8 +19,7 @@
 .popular__item {
   flex-grow: 0;
   flex-shrink: 0;
-  width: 160px;
-  height: 160px;
+  max-width: 160px;
 }
 
 .popular__picture {
