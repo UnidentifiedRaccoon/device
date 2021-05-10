@@ -20,4 +20,13 @@
 
 .drop-out__link {
   padding: 7px  15px 8px 0;
+
+  &:hover,
+  &:focus {
+	opacity: 60%;
+  }
+
+  &:active {
+	opacity: 30%;
+  }
 }

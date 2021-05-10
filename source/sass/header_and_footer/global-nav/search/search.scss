@@ -31,11 +31,6 @@
   border-bottom: 2px solid #000000;
 }
 
-
-
-
-
-
 .search__label::before {
   position: absolute;
   content: '';
@@ -58,4 +53,15 @@
   border: 2px solid #000000;
 
   font-size: 15px;
+
+  &:hover,
+  &:focus {
+	color: #ffffff;
+	background-color: #000000;
+  }
+
+  &:active {
+	color: transparentize(#ffffff, 0.6);
+  }
 }
+

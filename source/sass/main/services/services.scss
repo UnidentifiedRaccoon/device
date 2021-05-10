@@ -25,24 +25,39 @@
   list-style: none;
 }
 
-.services__toggle {
+.services__toggle-item {
   margin-bottom: 20px;
+
+  &:hover span,
+  &:focus span {
+	background: linear-gradient( $saturatedYellow 0%, $saturatedYellow 100%);
+  }
+
+  &:active span {
+	color: $saturatedYellow;
+	background: none;
+  }
+  &:active button {
+	background-color: #000000;
+  }
 }
 
-.services__toggle button {
+.services__toggle-button {
   width: 100%;
   min-width: 160px;
   border: none;
   background-color: inherit;
 }
 
-.services__toggle span {
+//.services__toggle button:
+
+.services__toggle-span {
   display: block;
   width: 160px;
   box-sizing: border-box;
   padding: 7px 20px 10px 20px;
 
-  background: linear-gradient( transparentize(#000000, 1) 40%, $yellow 40%, $yellow 55%, transparentize(#000000, 1) 55%);
+  background: linear-gradient( transparentize(#000000, 1) 40%, $saturatedYellow 40%, $saturatedYellow 55%, transparentize(#000000, 1) 55%);
 
   font-family: "Gilroy", "Arial", sans-serif ;
   font-weight: 800;

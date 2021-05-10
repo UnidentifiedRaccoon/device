@@ -145,8 +145,7 @@
   padding: 7px 15px 9px 20px;
 
   border: none;
-  background: linear-gradient( #ffffff 40%, $yellow 40%, $yellow 55%, #ffffff 55%);
-
+  background: linear-gradient( #ffffff 40%, $saturatedYellow 40%, $saturatedYellow 55%, #ffffff 55%);
   font-family: "Gilroy", "Arial", sans-serif ;
   font-weight: 800;
   font-size: 18px;
@@ -155,6 +154,15 @@
 
   text-transform: uppercase;
   text-align: center;
+
+  &:hover,
+  &:focus {
+	background: linear-gradient($saturatedYellow 0%, $saturatedYellow 100%);
+  }
+
+  &:active {
+	color: transparentize(#000000, 0.7);
+  }
 }
 
 .slider__radio-list {

@@ -1,0 +1,40 @@
+.social {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 140px;
+  margin: 0;
+  margin-left: -50px;
+  padding: 0;
+  list-style: none;
+}
+
+.social__link {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50px;
+  opacity: 30%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  &--fb {
+	background-image: url("/img/icon_fb.svg");
+  }
+  &--insta {
+	background-image: url("/img/icon_insta.svg");
+  }
+  &--twitter {
+	background-image: url("/img/icon_twitter.svg");
+  }
+
+  &:hover,
+  &:focus {
+	opacity: 60%;
+  }
+
+  &:active {
+	opacity: 10%;
+  }
+}
+

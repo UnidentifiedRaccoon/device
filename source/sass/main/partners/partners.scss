@@ -21,6 +21,25 @@
   max-height: 100px;
   background-color: #e5e5e5;
   border-bottom: 4px solid #e5e5e5;
+
+  &:hover,
+  &:focus {
+	background: none;
+
+	& .partners__img {
+	  opacity: 100%;
+	}
+  }
+
+  &:active {
+	border: none;
+
+	& .partners__img {
+	  opacity: 60%;
+	}
+  }
+
+
 }
 
 .partners__img {
