@@ -1,0 +1,28 @@
+.partners {
+  padding-top: 10px;
+  margin-bottom: 80px;
+}
+
+.partners__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.partners__item {
+  margin-bottom: 20px;
+}
+
+.partners__item-link {
+  display: block;
+  max-height: 100px;
+  background-color: #e5e5e5;
+  border-bottom: 4px solid #e5e5e5;
+}
+
+.partners__img {
+  opacity: 40%;
+}
